@@ -4,49 +4,68 @@
 	<title>Receta</title>
 </head>
 <body>
-	<form action="https://www.w3schools.com/action_page.php" method="post">
+	<form action="https://lm.ciclo.iesnervion.es/" method="post">
     <fieldset>
         <legend>Receta</legend>
         <label for="nombre">Nombre plato: </label>
         <input name="nombre" id="nombre" type="text"><br>
-        <label for="Receta">Receta:</label>
-        <select name="Receta" id="Receta">
-            <!--Etiqueta option-->
-            <option value="value1">Sí<option>
-            <option value="value2" selected>No<option>
-        </select><br><br>
-        <label>Edad: </label>
-        <input name="edad" type="checkbox" value="20-39"> 20-39
-        <input name="edad" type="checkbox" value="40-59"> 40-59
-        <input name="edad" type="checkbox" value="60-79"> 60-79<br><br>
-        <label for="email">Email: </label>
-        <input id="email" name="email" type="email"><br><br>
-        <label for="estudios">Estudios: </label>
-        <select name="estudios" id="estudios">
-            <optgroup label="Estudios Universitarios">
-                <option>Doctorado</option>
-                <option>Máster</option>
-                <option>Grado</option>
+        <label for="correo">Correo: </label>
+        <input name="correo" id="correo" type="text"><br>
+        <label>Momento: </label><br>
+        <input name="momento[]" type="checkbox" value="Desayuno"> Desayuno<br>
+        <input name="momento[]" type="checkbox" value="Almuerzo"> Almuerzo<br>
+        <input name="momento[]" type="checkbox" value="Merienda"> Merienda<br>
+        <input name="momento[]" type="checkbox" value="Cena"> Cena<br>
+        <input name="momento[]" type="checkbox" value="Postre"> Postre
+        
+       
+        <br><br>
+        <label for="ingredientes">Ingredientes necesarios: </label><br>
+        <select name="ingredientes[]" id="ingredientes" multiple>
+            <optgroup label="Carne">
+                <option>Pollo</option>
+                <option>Secreto</option>
+                <option>Solomillo</option>
             </optgroup>
-            <optgroup label="Ciclo Formativo">
-                <option>Grado Superior</option>
-                <option>Grado Medio</option>
+            <optgroup label="Pescado">
+                <option>Merluza</option>
+                <option>Gambas</option>
             </optgroup>
+            <optgroup label="Verdura">
+                <option>Zanahoria</option>
+                <option>Lechuga</option>
+                <option>Maiz</option>
+            </optgroup>
+             <optgroup label="Fruta">
+                <option>Piña</option>
+                <option>Sandía</option>
+                <option>Melon</option>
+            </optgroup>
+            
+        
+
+        
+       
+        <br><br>
         </select><br><br>
-        <label for="navegador">Elige tu navegador favorito: </label>
-        <input name="navegador" id="navegador" list="browsers">
-        <datalist name="browsers" id="browsers">
-            <option value="Chrome">
-            <option value="Firefox">
-            <option value="Internet Explorer">
-            <option value="Opera">
-            <option value="Safari">
-            <option value="Microsoft Edge">
-        </datalist><br><br>
-        <label for="mensaje">Escribe tu mensaje: </label>
-        <textarea rows="10" cols="50" placeholder="Mensaje" id="mensaje" name="mensaje" ></textarea>
-    </fieldset>
-    <input type="submit" name="enviar" value="Enviar">
+       
+
+            <label>Horas de preparción: </label><br>
+        <input name="horas" type="radio" value="0 "> 0 
+        <input name="horas" type="radio" value="1 "> 1 
+        <input name="horas" type="radio" value="2 "> 2  <br><br>
+
+          <label>Minutos de preparción: </label><br>
+        <input name="minutos" type="radio" value="0 "> 0 
+        <input name="minutos" type="radio" value="15 "> 15 
+        <input name="minutos" type="radio" value="30 "> 30 
+        <input name="minutos" type="radio" value="45 "> 45  <br><br>
+
+
+        
+        <label for="mensaje">Ingresa una foto: </label>
+    <input type="file" name="foto" value="foto" accept="image/*"><br><br>
+    <button type="submit">Enviar</button>
 </form>
 
 </body>
