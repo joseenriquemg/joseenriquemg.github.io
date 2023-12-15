@@ -1,0 +1,30 @@
+h1 {
+    color: #8B0000;
+    border: 3px solid #8B0000;
+    padding: 20px;
+    border-radius: 20px;
+}
+img {
+	float: left;
+	padding-right: 10px;
+	width: 150px;
+    height: 150px;
+}
+body {
+	max-width: 800px;
+	padding: 10px;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+video {
+	width: 300px;
+    height: 200px;
+    padding-left: 355px;
+}
+a{
+	padding-left: 325px;
+
+}
+
