@@ -1,0 +1,32 @@
+body {
+	background-color: #B5F4FF;
+}
+
+h1 {
+	font-style: Helvetia;
+}
+
+header {
+	background-color: #007bff
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+img {
+	width: 200px;
+}
+
+#contenido {
+	padding: 20px;
+}
+
+#contenido p {
+	font-style: verdana;
+}
