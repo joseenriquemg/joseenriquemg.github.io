@@ -7,7 +7,10 @@ h1 {
 }
 
 header {
-	background-color: #007bff
+	background-color: #007bff;
+	border-radius: 200px;
+	padding: 4px;
+
 }
 
 a{
@@ -20,13 +23,34 @@ a:hover {
 }
 
 img {
-	width: 200px;
+	width: 300px;
+	display: block;
+	margin: auto;
+	border-color: #007bff;
+	box-shadow: 6px;
+
 }
 
 #contenido {
-	padding: 20px;
+	padding: 26px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 }
 
 #contenido p {
 	font-style: verdana;
+	font-size: 23px;
+}
+
+#contenido h2 {
+	font-size: 33px;
+}
+
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 1px;
+
 }
